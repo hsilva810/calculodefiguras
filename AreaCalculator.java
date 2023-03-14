@@ -1,3 +1,5 @@
+import RectanguloManuel.Rectangulo;
+
 import java.util.Scanner;
 
 public class AreaCalculator {
@@ -22,12 +24,7 @@ public class AreaCalculator {
                 break;
 
             case 2:
-                System.out.print("Ingresa la base del rectángulo: ");
-                double base = scanner.nextDouble();
-                System.out.print("Ingresa la altura del rectángulo: ");
-                double height = scanner.nextDouble();
-                double rectangleArea = base * height;
-                System.out.println("El área del rectángulo es: " + rectangleArea);
+                Rectangulo.calculateRectangleArea();
                 break;
 
             case 3:
