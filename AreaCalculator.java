@@ -17,8 +17,7 @@ public class AreaCalculator {
             case 1:
                 System.out.print("Ingresa el lado del cuadrado: ");
                 double side = scanner.nextDouble();
-                double squareArea = side * side;
-                System.out.println("El área del cuadrado es: " + squareArea);
+
                 break;
 
             case 2:
@@ -26,15 +25,13 @@ public class AreaCalculator {
                 double base = scanner.nextDouble();
                 System.out.print("Ingresa la altura del rectángulo: ");
                 double height = scanner.nextDouble();
-                double rectangleArea = base * height;
-                System.out.println("El área del rectángulo es: " + rectangleArea);
+
                 break;
 
             case 3:
                 System.out.print("Ingresa el radio del círculo: ");
                 double radius = scanner.nextDouble();
-                double circleArea = Math.PI * radius * radius;
-                System.out.println("El área del círculo es: " + circleArea);
+                System.out.println(Circulo.calcularArea(radius));
                 break;
 
             case 4:
@@ -42,10 +39,14 @@ public class AreaCalculator {
                 double baseTri = scanner.nextDouble();
                 System.out.print("Ingresa la altura del triángulo: ");
                 double heightTri = scanner.nextDouble();
-                double triangleArea = (baseTri * heightTri) / 2;
-                System.out.println("El área del triángulo es: " + triangleArea);
-                break;
 
+                break;
+            case 5:
+                System.out.print("Ingresa la altura del cilindro: ");
+                double altura = scanner.nextDouble();
+                System.out.print("Ingresa el radio de la base del cilindro: ");
+                double radio = scanner.nextDouble();
+                System.out.println("El area del cilindro es: " + ((2 * 3.1416 * radio * altura) + (2 * 3.1416 * radio * radio)));
             default:
                 System.out.println("Opción inválida.");
                 break;
