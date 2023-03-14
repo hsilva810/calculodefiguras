@@ -17,7 +17,7 @@ public class AreaCalculator {
             case 1:
                 System.out.print("Ingresa el lado del cuadrado: ");
                 double side = scanner.nextDouble();
-                System.out.println(Cuadrado.getAreaCuadrado(side));
+
                 break;
 
             case 2:
